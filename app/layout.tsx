@@ -20,13 +20,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Abogados en Las Condes, Santiago`,
+    default: `${siteConfig.name} | Abogados en Santiago, Chile`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
-    "abogados Las Condes",
-    "estudio jurídico Santiago",
+    "abogados Santiago",
+    "abogados en Chile",
     "abogado civil",
     "abogado de familia",
     "abogado penal",
@@ -45,13 +45,13 @@ export const metadata: Metadata = {
     locale: "es_CL",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Abogados en Las Condes, Santiago`,
+    title: `${siteConfig.name} | Abogados en Santiago, Chile`,
     description: siteConfig.description,
     // La imagen OG se genera dinámicamente en app/opengraph-image.tsx
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Abogados en Las Condes`,
+    title: `${siteConfig.name} | Abogados en Santiago, Chile`,
     description: siteConfig.description,
   },
   robots: {

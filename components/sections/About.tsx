@@ -10,8 +10,8 @@ export function About() {
       <Container>
         <SectionHeading
           eyebrow="Quiénes somos"
-          title="Un estudio cercano, con vocación de excelencia"
-          description="Bravo & Arismendi es un estudio jurídico que combina experiencia, capacidad analítica y un trato directo con cada cliente. Trabajamos para entregarte soluciones claras y una representación comprometida."
+          title="Un equipo cercano, con vocación de excelencia"
+          description="Bravo & Arismendi es un equipo de abogados que combina experiencia, capacidad analítica y un trato directo con cada cliente. Trabajamos para entregarte soluciones claras y una representación comprometida."
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">

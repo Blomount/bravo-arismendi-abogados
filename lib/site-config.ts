@@ -9,10 +9,9 @@
 export const siteConfig = {
   name: "Bravo & Arismendi Abogados",
   shortName: "Bravo & Arismendi",
-  // TODO: definir slogan oficial del estudio
-  slogan: "Asesoría jurídica estratégica y litigación de excelencia",
+  slogan: "Compromiso, excelencia y visión para resolver los desafíos de hoy",
   description:
-    "Estudio jurídico en Las Condes, Santiago. Asesoría estratégica y litigación en Derecho Civil, Familia, Penal, Laboral y más. Compromiso con la resolución eficiente de conflictos.",
+    "Abogados en Santiago, Chile. Asesoría estratégica y litigación en Derecho Civil, Familia, Penal, Laboral y más. Compromiso con la resolución eficiente de conflictos.",
   // Cambia esto al dominio definitivo antes de publicar (afecta canonical, sitemap y OG)
   url: "https://www.byabogados.cl",
   locale: "es-CL",
@@ -22,11 +21,10 @@ export const siteConfig = {
     phoneDisplay: "+56 9 8176 4676",
     phoneE164: "56981764676",
     whatsappMessage: "Hola, necesito asesoría legal.",
-    city: "Las Condes",
+    city: "Santiago",
     region: "Región Metropolitana",
     country: "Chile",
-    // TODO: dirección exacta de la oficina (opcional, mejora el SEO local)
-    addressLine: "Las Condes, Santiago de Chile",
+    addressLine: "Santiago de Chile",
   },
 
   nav: [
@@ -66,11 +64,13 @@ export const partners: Partner[] = [
     name: "Carol Bravo",
     role: "Abogada · Socia",
     initials: "CB",
-    // TODO: completar bio real (título, universidad, especialidad)
-    bio: "Abogada con vocación de servicio y enfoque en la atención cercana y rigurosa de cada cliente. Su práctica se orienta a entregar soluciones jurídicas claras y efectivas.",
+    photo: "/carol.jpg",
+    photoLarge: "/carol-full.jpg",
+    bio: "Abogada con destacada trayectoria en gestión de corretaje de propiedades y asesoría integral a empresas. Su práctica se desarrolla con éxito en Derecho Civil, Penal y de Familia, entre otras áreas. Destaca por su agudo rigor analítico, un alto desempeño profesional y un firme compromiso con la excelencia y la defensa estratégica de sus representados.",
     credentials: [
-      // TODO: completar credenciales reales de Carol Bravo
-      "Abogada",
+      "Abogada, Universidad Andrés Bello (2020)",
+      "Diplomada en Violencia de Género",
+      "Especialización en Compras Públicas, Ley Karin y Propiedad Intelectual",
     ],
   },
   {
@@ -96,9 +96,7 @@ import {
   Gavel,
   Briefcase,
   Building2,
-  Home,
   ShieldCheck,
-  FileText,
   type LucideIcon,
 } from "lucide-react";
 
@@ -110,52 +108,40 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Derecho Civil",
+    title: "Derecho Civil y Propiedades",
     description:
-      "Contratos, responsabilidad civil, indemnizaciones, cobranzas y conflictos patrimoniales con una estrategia clara.",
+      "Litigios contractuales, regularización de propiedades, corretaje inmobiliario, indemnizaciones y asesoría patrimonial.",
     icon: Scale,
+  },
+  {
+    title: "Derecho Penal y Litigación Compleja",
+    description:
+      "Defensa y representación penal estratégica, delitos económicos y de la empresa.",
+    icon: Gavel,
+  },
+  {
+    title: "Derecho Laboral y Corporativo",
+    description:
+      "Asesoría integral a empresas, compliance (Ley Karin), compras públicas y propiedad intelectual. Defensas y demandas laborales.",
+    icon: Briefcase,
   },
   {
     title: "Derecho de Familia",
     description:
-      "Divorcios, pensión de alimentos, cuidado personal, relación directa y regular y violencia intrafamiliar.",
+      "Divorcios, pensiones de alimentos, cuidado personal, relación directa y regular, y causas de violencia de género.",
     icon: Users,
   },
   {
-    title: "Derecho Penal",
+    title: "Litigación Constitucional y Administrativa",
     description:
-      "Defensa penal y querellas, con asesoría estratégica en delitos económicos y de la empresa.",
-    icon: Gavel,
-  },
-  {
-    title: "Derecho Laboral",
-    description:
-      "Despidos, finiquitos, tutela de derechos fundamentales y demandas laborales para trabajadores y empresas.",
-    icon: Briefcase,
+      "Recursos de protección y trámites ante la Administración del Estado.",
+    icon: ShieldCheck,
   },
   {
     title: "Policía Local",
     description:
-      "Representación en juzgados de policía local: infracciones, accidentes de tránsito y procedimientos municipales.",
+      "Trámites, descargos y comparecencias ante Juzgados de Policía Local: accidentes de tránsito, ley del consumidor, entre otros.",
     icon: Building2,
-  },
-  {
-    title: "Regularización de propiedades",
-    description:
-      "Saneamiento de títulos, regularización de la pequeña propiedad raíz y trámites de inscripción.",
-    icon: Home,
-  },
-  {
-    title: "Recursos de protección",
-    description:
-      "Acciones constitucionales para resguardar tus derechos fundamentales ante actos arbitrarios o ilegales.",
-    icon: ShieldCheck,
-  },
-  {
-    title: "Trámites ante la Administración del Estado",
-    description:
-      "Gestiones y recursos ante organismos públicos, procedimientos administrativos y reclamaciones.",
-    icon: FileText,
   },
 ];
 
@@ -249,7 +235,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "Un trabajo impecable y muy humano. Me explicaron cada paso y siempre sentí que mi caso estaba en buenas manos.",
     author: "Cliente — Derecho de Familia",
-    matter: "Las Condes",
+    matter: "Santiago",
   },
   {
     quote:
@@ -259,7 +245,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Defensa seria y estratégica. Recomiendo absolutamente al estudio por su compromiso y cercanía.",
+      "Defensa seria y estratégica. Recomiendo absolutamente al equipo por su compromiso y cercanía.",
     author: "Cliente — Derecho Laboral",
     matter: "Región Metropolitana",
   },
@@ -285,9 +271,9 @@ export const faqs: Faq[] = [
       "Los honorarios se acuerdan de forma transparente antes de iniciar, según la complejidad y el tipo de gestión. Siempre recibirás una propuesta clara antes de comprometerte.",
   },
   {
-    question: "¿En qué comunas y ciudades atienden?",
+    question: "¿En qué ciudades atienden?",
     answer:
-      "Nuestra oficina está en Las Condes, Santiago, y atendemos casos en toda la Región Metropolitana y a nivel nacional según la materia.",
+      "Atendemos en Santiago y en todo Chile según la materia, de forma presencial cuando el caso lo requiere y también de manera remota para mayor comodidad.",
   },
   {
     question: "¿Qué áreas del derecho cubren?",

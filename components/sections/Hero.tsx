@@ -24,7 +24,7 @@ export function Hero() {
       <Container className="relative grid min-h-[88vh] grid-cols-1 items-center gap-12 py-28 lg:grid-cols-2 lg:gap-8">
         <div className="max-w-3xl">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-surface/15 bg-surface/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-accent-soft">
-            Estudio jurídico · Las Condes, Santiago
+            Abogados · Santiago, Chile
           </span>
 
           <h1 className="text-balance text-4xl font-semibold leading-[1.1] text-surface sm:text-5xl lg:text-6xl">
@@ -67,8 +67,8 @@ export function Hero() {
               </dd>
             </div>
             <div>
-              <dt className="text-2xl font-semibold text-surface">Las Condes</dt>
-              <dd className="mt-1 text-xs text-surface/60">Santiago de Chile</dd>
+              <dt className="text-2xl font-semibold text-surface">Santiago</dt>
+              <dd className="mt-1 text-xs text-surface/60">y todo Chile</dd>
             </div>
           </dl>
         </div>
@@ -81,7 +81,7 @@ export function Hero() {
           />
           <Image
             src="/arismendi-oficina.jpg"
-            alt="Raúl Arismendi, abogado socio, en la oficina del estudio"
+            alt="Raúl Arismendi, abogado socio de Bravo & Arismendi"
             width={900}
             height={1350}
             priority

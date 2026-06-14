@@ -30,7 +30,7 @@ export default function OgImage() {
             color: "#c9ad82",
           }}
         >
-          Estudio jurídico · Las Condes, Santiago
+          Abogados · Santiago, Chile
         </div>
         <div style={{ fontSize: 80, fontWeight: 600, marginTop: 24, lineHeight: 1.05 }}>
           Bravo <span style={{ color: "#c9ad82" }}>&amp;</span> Arismendi

@@ -1,7 +1,7 @@
 # Bravo & Arismendi Abogados — Sitio web
 
-Landing profesional (solo frontend) del estudio jurídico **Bravo & Arismendi**,
-Las Condes, Santiago de Chile. Construido con Next.js 14 (App Router), React,
+Landing profesional (solo frontend) del equipo de abogados **Bravo & Arismendi**,
+Santiago de Chile. Construido con Next.js 14 (App Router), React,
 TypeScript y Tailwind CSS. Listo para desplegar en Vercel.
 
 ## Requisitos

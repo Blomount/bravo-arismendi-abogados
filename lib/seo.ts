@@ -14,7 +14,6 @@ export function legalServiceJsonLd() {
     priceRange: "$$",
     knowsLanguage: ["es"],
     areaServed: [
-      { "@type": "City", name: "Las Condes" },
       { "@type": "City", name: "Santiago" },
       { "@type": "Country", name: "Chile" },
     ],
