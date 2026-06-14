@@ -18,7 +18,7 @@ export const siteConfig = {
   locale: "es-CL",
 
   contact: {
-    email: "bravoyarismendiabogados@gmail.com",
+    email: "contacto@byabogados.cl",
     phoneDisplay: "+56 9 8176 4676",
     phoneE164: "56981764676",
     whatsappMessage: "Hola, necesito asesoría legal.",
