@@ -14,7 +14,7 @@ export const siteConfig = {
   description:
     "Estudio jurídico en Las Condes, Santiago. Asesoría estratégica y litigación en Derecho Civil, Familia, Penal, Laboral y más. Compromiso con la resolución eficiente de conflictos.",
   // Cambia esto al dominio definitivo antes de publicar (afecta canonical, sitemap y OG)
-  url: "https://byabogados.cl",
+  url: "https://www.byabogados.cl",
   locale: "es-CL",
 
   contact: {
