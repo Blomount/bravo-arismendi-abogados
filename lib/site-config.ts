@@ -52,8 +52,10 @@ export const mailtoUrl = `mailto:${siteConfig.contact.email}`;
 export interface Partner {
   name: string;
   role: string;
-  /** Ruta a la foto en /public. Placeholder hasta tener la imagen real. */
+  /** Ruta a la foto (círculo) en /public. Placeholder hasta tener la imagen real. */
   photo?: string;
+  /** Versión grande para el lightbox al hacer click. Cae a `photo` si no existe. */
+  photoLarge?: string;
   initials: string;
   bio: string;
   credentials: string[];
@@ -75,6 +77,8 @@ export const partners: Partner[] = [
     name: "Raúl Arismendi",
     role: "Abogado · Socio",
     initials: "RA",
+    photo: "/arismendi.jpg",
+    photoLarge: "/arismendi-full.jpg",
     bio: "Con una sólida y amplia trayectoria en el ejercicio de la profesión, su práctica se enfoca en la asesoría estratégica y litigación en las áreas de Derecho Civil, Penal y Laboral, destacando por su alta capacidad analítica y un compromiso orientado a la resolución eficiente de conflictos jurídicos complejos.",
     credentials: [
       "Abogado, Universidad de los Andes",

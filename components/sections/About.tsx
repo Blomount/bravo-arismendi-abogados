@@ -2,6 +2,7 @@ import { partners } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
+import { PartnerPhoto } from "@/components/ui/PartnerPhoto";
 
 export function About() {
   return (
@@ -17,11 +18,14 @@ export function About() {
           {partners.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.1}>
               <article className="flex h-full flex-col rounded-2xl border border-primary/10 bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                <div className="flex items-center gap-4">
-                  {/* Foto placeholder — reemplazar por imagen real en /public */}
-                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary text-lg font-semibold text-accent-soft">
-                    {p.initials}
-                  </div>
+                <div className="flex items-center gap-5">
+                  <PartnerPhoto
+                    name={p.name}
+                    role={p.role}
+                    initials={p.initials}
+                    photo={p.photo}
+                    photoLarge={p.photoLarge}
+                  />
                   <div>
                     <h3 className="text-xl text-primary">{p.name}</h3>
                     <p className="text-sm font-medium text-accent-dark">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { siteConfig, whatsappUrl } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
@@ -20,7 +21,7 @@ export function Hero() {
         className="pointer-events-none absolute -right-32 -top-32 h-[40rem] w-[40rem] rounded-full bg-accent/10 blur-3xl"
       />
 
-      <Container className="relative flex min-h-[88vh] flex-col justify-center py-28">
+      <Container className="relative grid min-h-[88vh] grid-cols-1 items-center gap-12 py-28 lg:grid-cols-2 lg:gap-8">
         <div className="max-w-3xl">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-surface/15 bg-surface/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-accent-soft">
             Estudio jurídico · Las Condes, Santiago
@@ -70,6 +71,23 @@ export function Hero() {
               <dd className="mt-1 text-xs text-surface/60">Santiago de Chile</dd>
             </div>
           </dl>
+        </div>
+
+        {/* Retrato ambiental (solo desktop) */}
+        <div className="relative hidden justify-self-center lg:block lg:justify-self-end">
+          <div
+            aria-hidden="true"
+            className="absolute -inset-4 rounded-[2rem] bg-accent/10 blur-2xl"
+          />
+          <Image
+            src="/arismendi-oficina.jpg"
+            alt="Raúl Arismendi, abogado socio, en la oficina del estudio"
+            width={900}
+            height={1350}
+            priority
+            sizes="(min-width: 1024px) 24rem, 0px"
+            className="relative w-[20rem] rounded-2xl object-cover shadow-2xl ring-1 ring-surface/10 xl:w-[24rem]"
+          />
         </div>
       </Container>
     </section>
