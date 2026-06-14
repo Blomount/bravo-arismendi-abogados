@@ -16,7 +16,7 @@ export function CtaBanner() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-primary-950/85" />
+        <div className="absolute inset-0 bg-primary-950/65" />
       </div>
 
       <Container className="relative flex flex-col items-center gap-6 py-24 text-center sm:py-28">
