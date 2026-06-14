@@ -8,6 +8,7 @@ import { WhyUs } from "@/components/sections/WhyUs";
 import { Process } from "@/components/sections/Process";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Faq } from "@/components/sections/Faq";
+import { CtaBanner } from "@/components/sections/CtaBanner";
 import { Contact } from "@/components/sections/Contact";
 
 export default function HomePage() {
@@ -22,6 +23,7 @@ export default function HomePage() {
         <Process />
         <Testimonials />
         <Faq />
+        <CtaBanner />
         <Contact />
       </main>
       <Footer />
